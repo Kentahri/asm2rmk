@@ -1,0 +1,106 @@
+/* Skip to Main Content */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background: #ffcc00;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 10px;
+}
+
+/* Header */
+header {
+  background-color: #f8b400;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  background-color: #ffcc00;
+  padding: 10px;
+  display: inline-block;
+  width: 80%;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  /* display: inline-block; */ /* Đã comment theo yêu cầu */
+  width: 120px;
+  text-align: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: yellow;
+}
+
+/* Chỉ chọn hình ảnh trong nav */
+nav img {
+  width: 10%;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+/* Chỉ chọn hình ảnh trong grid */
+.grid img {
+  width: 100%;
+}
+
+/* Flexbox */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Box Model for Images */
+img {
+  width: 100%;
+  max-width: 300px;
+  border: 3px solid #333;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+/* nth-child Selector */
+.grid img:nth-child(odd) {
+  border-radius: 50px;
+}
+
+/* Hover Effect */
+img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Main */
+main {
+  background-color: #f0f0f0;
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #ddd;
+  padding: 10px;
+  text-align: center;
+}
